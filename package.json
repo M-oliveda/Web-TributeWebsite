@@ -4,5 +4,16 @@
   "description": "This is a learning project website to test my HTML and CSS skills.",
   "author": "Mauricio Oliveda",
   "license": "Apache-2.0",
-  "private": true
+  "private": true,
+  "scripts": {
+    "test": "echo 'Hello World!'",
+    "parcel:dev": "parcel './web/src/index.html' --dist-dir './web/dist' --no-source-maps",
+    "parcel:build": "parcel build './web/src/index.html' --dist-dir './web/public' --no-source-maps"
+  },
+  "devDependencies": {
+    "@parcel/packager-raw-url": "2.9.3",
+    "@parcel/transformer-webmanifest": "2.9.3",
+    "parcel": "^2.9.3",
+    "prettier": "^3.0.2"
+  }
 }
